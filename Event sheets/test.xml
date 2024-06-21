@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>test</name>
+    <events>
+        <event-group description="" sid="388236194747575" title="playermovement2">
+            <sub-events>
+                <event-block sid="203618842447648">
+                    <conditions>
+                        <condition id="2" name="Клавиша нажата" sid="283762619001756" type="Keyboard">
+                            <param id="0" name="Клавиша">39</param>
+                        </condition>
+                        <condition behavior="Платформа" id="4" inverted="1" name="Падает" sid="885567139024992" type="anhero" />
+                        <condition id="-7" name="Compare instance variable" sid="332100835550747" type="anhero">
+                            <param id="0" name="Instance variable">busy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Установить анимацию" sid="305212314976919" type="anhero">
+                            <param id="0" name="Анимация">&quot;run&quot;</param>
+                            <param id="1" name="Из">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="664706098452601">
+                    <conditions>
+                        <condition id="2" name="Клавиша нажата" sid="189758339748950" type="Keyboard">
+                            <param id="0" name="Клавиша">37</param>
+                        </condition>
+                        <condition behavior="Платформа" id="4" inverted="1" name="Падает" sid="851202421075384" type="anhero" />
+                        <condition id="-7" name="Compare instance variable" sid="931037541901923" type="anhero">
+                            <param id="0" name="Instance variable">busy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Установить анимацию" sid="573045450669241" type="anhero">
+                            <param id="0" name="Анимация">&quot;run&quot;</param>
+                            <param id="1" name="Из">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="607368676672890">
+                    <conditions>
+                        <condition behavior="Платформа" id="7" name="Остановлено" sid="356095830277012" type="anhero" />
+                        <condition id="2" inverted="1" name="Клавиша нажата" sid="563812388521324" type="Keyboard">
+                            <param id="0" name="Клавиша">39</param>
+                        </condition>
+                        <condition behavior="Платформа" id="2" name="На полу" sid="610674474651001" type="anhero" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Установить анимацию" sid="342236302429234" type="anhero">
+                            <param id="0" name="Анимация">&quot;idle&quot;</param>
+                            <param id="1" name="Из">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="955868554677198">
+                    <conditions>
+                        <condition behavior="Платформа" id="7" name="Остановлено" sid="327301379793863" type="anhero" />
+                        <condition id="2" inverted="1" name="Клавиша нажата" sid="324119592349273" type="Keyboard">
+                            <param id="0" name="Клавиша">37</param>
+                        </condition>
+                        <condition behavior="Платформа" id="2" name="На полу" sid="852219414349464" type="anhero" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Установить анимацию" sid="278457409506125" type="anhero">
+                            <param id="0" name="Анимация">&quot;idle&quot;</param>
+                            <param id="1" name="Из">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="956303454907958">
+                    <conditions>
+                        <condition behavior="Платформа" id="5" name="В прыжке" sid="955535771806665" type="anhero" />
+                        <condition behavior="Платформа" id="2" inverted="1" name="На полу" sid="718786435754854" type="anhero" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Установить анимацию" sid="215905072093439" type="anhero">
+                            <param id="0" name="Анимация">&quot;jump&quot;</param>
+                            <param id="1" name="Из">1</param>
+                        </action>
+                        <action id="5" name="Установить кадр" sid="987912109637372" type="anhero">
+                            <param id="0" name="Номер кадра">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="827216674497100">
+                    <conditions>
+                        <condition behavior="Платформа" id="6" name="Падение" sid="185123322877125" type="anhero" />
+                        <condition behavior="Платформа" id="2" inverted="1" name="На полу" sid="486396396220019" type="anhero" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Установить анимацию" sid="826452124937383" type="anhero">
+                            <param id="0" name="Анимация">&quot;jump&quot;</param>
+                            <param id="1" name="Из">1</param>
+                        </action>
+                        <action id="5" name="Установить кадр" sid="381933144535252" type="anhero">
+                            <param id="0" name="Номер кадра">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="899281164422671">
+                    <conditions>
+                        <condition behavior="Платформа" id="9" name="При приземлении" sid="815541226603912" type="anhero" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Установить анимацию" sid="576667804828770" type="anhero">
+                            <param id="0" name="Анимация">&quot;idle&quot;</param>
+                            <param id="1" name="Из">1</param>
+                        </action>
+                        <action behavior="Платформа" id="1" name="Задать макс скорость" sid="953148691556972" type="anhero">
+                            <param id="0" name="Макс скорость">270</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="903797885286031">
+                    <conditions>
+                        <condition id="2" name="Клавиша нажата" sid="627654521333642" type="Keyboard">
+                            <param id="0" name="Клавиша">90</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="361163403791691" type="anhero">
+                            <param id="0" name="Instance variable">busy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Платформа" id="7" name="Установить управление" sid="877316584746685" type="anhero">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="Платформа" id="1" name="Задать макс скорость" sid="725600025478235" type="anhero">
+                            <param id="0" name="Макс скорость">300</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="355543492168578">
+                    <conditions>
+                        <condition id="2" name="Клавиша нажата" sid="101449322558952" type="Keyboard">
+                            <param id="0" name="Клавиша">39</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="621469069820327" type="anhero">
+                            <param id="0" name="Instance variable">busy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Платформа" id="7" name="Установить управление" sid="562441906736219" type="anhero">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Установить отражение" sid="147282602644456" type="anhero">
+                            <param id="0" name="Состояние">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="197144164722713">
+                    <conditions>
+                        <condition id="2" name="Клавиша нажата" sid="566395900597299" type="Keyboard">
+                            <param id="0" name="Клавиша">37</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="169588054281303" type="anhero">
+                            <param id="0" name="Instance variable">busy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Платформа" id="7" name="Установить управление" sid="445235017594231" type="anhero">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Установить отражение" sid="210609995754069" type="anhero">
+                            <param id="0" name="Состояние">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="961784914230222">
+                    <conditions>
+                        <condition id="2" name="Клавиша нажата" sid="639395346679960" type="Keyboard">
+                            <param id="0" name="Клавиша">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Установить анимацию" sid="934126200843887" type="anhero">
+                            <param id="0" name="Анимация">&quot;looking up&quot;</param>
+                            <param id="1" name="Из">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="561978636417365">
+                            <conditions>
+                                <condition id="0" name="В столкновении с другим объектом" sid="158524228475533" type="anhero">
+                                    <param id="0" name="Объект">npc</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="351153927271536" type="anhero">
+                                    <param id="0" name="Instance variable">busy</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="563483524610316" type="System">
+                                    <param id="0" name="Object to create">testdialogue</param>
+                                    <param id="1" name="Layer">&quot;player&quot;</param>
+                                    <param id="2" name="X">89.119</param>
+                                    <param id="3" name="Y">8.24</param>
+                                </action>
+                                <action behavior="Платформа" id="0" name="Задать игнорирование ввода" sid="349909652002935" type="anhero">
+                                    <param id="0" name="Ввод">1</param>
+                                </action>
+                                <action behavior="Якорь" id="0" name="Установить включение" sid="991157949397317" type="testdialogue">
+                                    <param id="0" name="Состояние">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="512461763319828">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="853124080013985" type="testdialogue">
+                            <param id="0" name="Instance variable">completeText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Self.completeText</param>
+                        </condition>
+                        <condition id="2" name="Клавиша нажата" sid="331629879606538" type="Keyboard">
+                            <param id="0" name="Клавиша">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="837608530549134" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="854331131730719">
+                            <conditions />
+                            <actions>
+                                <action behavior="Платформа" id="0" name="Задать игнорирование ввода" sid="992236515502576" type="anhero">
+                                    <param id="0" name="Ввод">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="167390010943833">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="831251708997374" type="anhero" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="694779586349538">
+                    <conditions>
+                        <condition behavior="Платформа" id="2" inverted="1" name="На полу" sid="699375003070392" type="anhero" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="663376344886926">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="164823774080756" type="System" />
+                                <condition behavior="Платформа" id="10" name="По стене" sid="669141422229147" type="anhero">
+                                    <param id="0" name="Сторона">0</param>
+                                </condition>
+                                <condition id="2" name="Клавиша нажата" sid="476221295852358" type="Keyboard">
+                                    <param id="0" name="Клавиша">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Установить анимацию" sid="526490109882902" type="anhero">
+                                    <param id="0" name="Анимация">&quot;wallclimb&quot;</param>
+                                    <param id="1" name="Из">1</param>
+                                </action>
+                                <action id="7" name="Установить отражение" sid="281771722209698" type="anhero">
+                                    <param id="0" name="Состояние">0</param>
+                                </action>
+                                <action behavior="Платформа" id="5" name="Установить гравитацию" sid="763584156541573" type="anhero">
+                                    <param id="0" name="Гравитация">500</param>
+                                </action>
+                                <action behavior="Платформа" id="9" name="Задать вектор Y" sid="779247662920605" type="anhero">
+                                    <param id="0" name="Вектор Y">-500</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="212917858667625">
+                                    <conditions>
+                                        <condition id="0" name="Клавиша нажата" sid="656129957651155" type="Keyboard">
+                                            <param id="0" name="Клавиша">90</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Платформа" id="9" name="Задать вектор Y" sid="843402146159559" type="anhero">
+                                            <param id="0" name="Вектор Y">-250</param>
+                                        </action>
+                                        <action behavior="Платформа" id="8" name="Задать вектор X" sid="878888671734277" type="anhero">
+                                            <param id="0" name="Вектор X">-250</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="476937212789296">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="457141258124810" type="System" />
+                                <condition behavior="Платформа" id="10" name="По стене" sid="133658464055583" type="anhero">
+                                    <param id="0" name="Сторона">1</param>
+                                </condition>
+                                <condition id="2" name="Клавиша нажата" sid="633687252048087" type="Keyboard">
+                                    <param id="0" name="Клавиша">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Установить анимацию" sid="428557170274972" type="anhero">
+                                    <param id="0" name="Анимация">&quot;wallclimb&quot;</param>
+                                    <param id="1" name="Из">1</param>
+                                </action>
+                                <action id="7" name="Установить отражение" sid="971635702703050" type="anhero">
+                                    <param id="0" name="Состояние">1</param>
+                                </action>
+                                <action behavior="Платформа" id="5" name="Установить гравитацию" sid="820791063516877" type="anhero">
+                                    <param id="0" name="Гравитация">500</param>
+                                </action>
+                                <action behavior="Платформа" id="9" name="Задать вектор Y" sid="546994534730226" type="anhero">
+                                    <param id="0" name="Вектор Y">-500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="415173542882981">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                        <event-block sid="421472306523087">
+                            <conditions>
+                                <condition id="0" name="Клавиша нажата" sid="875902376129530" type="Keyboard">
+                                    <param id="0" name="Клавиша">90</param>
+                                </condition>
+                                <condition behavior="Платформа" id="10" name="По стене" sid="476736268141031" type="anhero">
+                                    <param id="0" name="Сторона">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Платформа" id="9" name="Задать вектор Y" sid="751932760861840" type="anhero">
+                                    <param id="0" name="Вектор Y">-600</param>
+                                </action>
+                                <action behavior="Платформа" id="8" name="Задать вектор X" sid="496775658135431" type="anhero">
+                                    <param id="0" name="Вектор X">400</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="263388887345909">
+                            <conditions>
+                                <condition id="0" name="Клавиша нажата" sid="147544533892483" type="Keyboard">
+                                    <param id="0" name="Клавиша">90</param>
+                                </condition>
+                                <condition behavior="Платформа" id="10" name="По стене" sid="567077618054871" type="anhero">
+                                    <param id="0" name="Сторона">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Платформа" id="9" name="Задать вектор Y" sid="521793186105695" type="anhero">
+                                    <param id="0" name="Вектор Y">-600</param>
+                                </action>
+                                <action behavior="Платформа" id="8" name="Задать вектор X" sid="970999120914111" type="anhero">
+                                    <param id="0" name="Вектор X">-400</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="983875785805569">
+                    <conditions>
+                        <condition behavior="Платформа" id="10" inverted="1" name="По стене" sid="530005514535859" type="anhero">
+                            <param id="0" name="Сторона">0</param>
+                        </condition>
+                        <condition behavior="Платформа" id="10" inverted="1" name="По стене" sid="125585888604841" type="anhero">
+                            <param id="0" name="Сторона">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Платформа" id="5" name="Установить гравитацию" sid="686693323083304" type="anhero">
+                            <param id="0" name="Гравитация">1200</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="866391218045333" title="Dialogue0">
+            <sub-events>
+                <event-block sid="834357106657063">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="548822667220872" type="testdialogue" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Таймер" id="0" name="Запустить таймер" sid="556828703673598" type="testdialogue">
+                            <param id="0" name="Продолжительность">Self.typeInterval</param>
+                            <param id="1" name="Тип">1</param>
+                            <param id="2" name="Тег">&quot;nextLetter&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="518700285304717" type="anhero">
+                            <param id="0" name="Instance variable">busy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="448517840741842" type="Спрайт">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="787511438972045">
+                    <conditions>
+                        <condition behavior="Таймер" id="0" name="Таймер" sid="185826477672975" type="testdialogue">
+                            <param id="0" name="Тег">&quot;nextLetter&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Набор текста" sid="564049744454470" type="testdialogue">
+                            <param id="0" name="Текст">left(Self.completeText, len(Self.Text) + 1)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="572072293240288">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="234350026070588" type="System">
+                                    <param id="0" name="First value">len(testdialogue.Text)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">len(testdialogue.completeText)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Набор текста" sid="936146559385747" type="testdialogue">
+                                    <param id="0" name="Текст">left(Self.completeText, len(Self.Text) + 1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="238818422969685">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="505212315534323" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Таймер" id="1" name="Остановить таймер" sid="576578510915752" type="testdialogue">
+                                    <param id="0" name="Тег">&quot;nextLetter&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="489178604045696">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="614555238269679" type="System">
+                                    <param id="0" name="First value">right(testdialogue.Text, 1)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">&quot; &quot;</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="437544746310791" type="testdialogue" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Играть" sid="159224386168068" type="Audio">
+                                    <param id="0" name="Аудио файл">testvoicebns</param>
+                                    <param id="2" name="Петля">0</param>
+                                    <param id="3" name="Громкость">-5</param>
+                                    <param id="1" name="Метка (необязательно)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="393980859102120">
+                    <conditions>
+                        <condition id="2" name="Клавиша нажата" sid="860117054396960" type="Keyboard">
+                            <param id="0" name="Клавиша">90</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="106083000798828" type="testdialogue">
+                            <param id="0" name="Instance variable">completeText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Self.completeText</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="129587416360085" type="testdialogue" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="721326826448463">
+                            <conditions>
+                                <condition id="-19" name="On destroyed" sid="719347721178725" type="testdialogue" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="404853951184900" type="anhero">
+                                    <param id="0" name="Instance variable">busy</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="489677417445362" type="Спрайт">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="305166555311758">
+            <conditions>
+                <condition id="2" name="Клавиша нажата" sid="778213416862808" type="Keyboard">
+                    <param id="0" name="Клавиша">90</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="101487931794274" type="testdialogue">
+                    <param id="0" name="Instance variable">completeText</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Self.completeText</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="324822538187940" type="testdialogue" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="956256393733413" title="rooms">
+            <sub-events>
+                <event-block sid="262741275220666">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="286895344811446" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="989583339086267">
+                            <conditions>
+                                <condition id="1" name="Перекрывается другим объектом" sid="123193504119830" type="anhero">
+                                    <param id="0" name="Объект">testroom1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Прокрутитьдо" id="1" name="Установить включение" sid="823455664364334" type="testroom1">
+                                    <param id="0" name="Состояние">1</param>
+                                </action>
+                                <action behavior="Прокрутитьдо" id="1" name="Установить включение" sid="297921394081640" type="anhero">
+                                    <param id="0" name="Состояние">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="202735464862437">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="605955983286108" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Прокрутитьдо" id="1" name="Установить включение" sid="417725786020113" type="testroom1">
+                                    <param id="0" name="Состояние">0</param>
+                                </action>
+                                <action behavior="Прокрутитьдо" id="1" name="Установить включение" sid="466188885157463" type="anhero">
+                                    <param id="0" name="Состояние">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="354385741895825">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="892531516199153" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="509260299314458">
+                            <conditions>
+                                <condition id="1" name="Перекрывается другим объектом" sid="261521821422012" type="anhero">
+                                    <param id="0" name="Объект">testroom2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Прокрутитьдо" id="1" name="Установить включение" sid="329154586087646" type="testroom2">
+                                    <param id="0" name="Состояние">1</param>
+                                </action>
+                                <action behavior="Прокрутитьдо" id="1" name="Установить включение" sid="941347940048161" type="anhero">
+                                    <param id="0" name="Состояние">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="325960143656495">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="466380816811031" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Прокрутитьдо" id="1" name="Установить включение" sid="971309907491715" type="testroom2">
+                                    <param id="0" name="Состояние">0</param>
+                                </action>
+                                <action behavior="Прокрутитьдо" id="1" name="Установить включение" sid="464872602138501" type="anhero">
+                                    <param id="0" name="Состояние">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="194617849474478">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="181699888907217" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="791456208356726">
+                            <conditions>
+                                <condition id="1" name="Перекрывается другим объектом" sid="926557901918744" type="anhero">
+                                    <param id="0" name="Объект">testroom1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="488232236655839">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="313289300769677" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="762380224454806">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="249094684277249" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="431546075613885">
+                            <conditions>
+                                <condition id="1" name="Перекрывается другим объектом" sid="618034990807728" type="anhero">
+                                    <param id="0" name="Объект">testroom1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="263482694349297">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="305935684603188" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="949980231118573">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="453575716176292" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="196203681205946" type="anhero">
+                    <param id="0" name="Instance variable">busy</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="213705692666128" type="Спрайт">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
